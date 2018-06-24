@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- 最新版本的 Bootstrap 核心 CSS 文件 -->
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <!--导入jquery的文件-->
+    <script type="text/javascript" src="js/jquery-1.11.0.js"></script>
+    <!-- 最新的 Bootstrap 核心 JavaScript 文件 -->
+    <script src="js/bootstrap.min.js"></script>
+
+    <style>
+        .title {
+            width: 360px;
+            height: 55px;
+            line-height: 55px;
+            color: rgba(16, 16, 16, 1);
+            background-color: gainsboro;
+            font-size: 18px;
+            text-align: center;
+            font-family: Microsoft Yahei;
+        }
+        .ball-item{
+            width: 31px;
+            height: 31px;
+            line-height: 31px;
+            font-size: 14px;
+            text-align: center;
+            font-family: Roboto;
+            border: 1px solid rgba(187, 187, 187, 1);
+            border-radius: 100%;
+            display: inline-block;
+            margin-right: 10px;
+        }
+        .ball-red{
+            color: red;
+        }
+
+        .ball-blue{
+            color: blue;
+        }
+
+        .menu{
+            background-color:gainsboro;
+            padding-top: 5px;
+            position: fixed;
+            left: 0;
+            bottom: 0;
+            width: 100%;
+        }
+
+        .menu-item{
+            text-align: center;
+        }
+
+        .menu-item-actived{
+            color: red;
+        }
+
+    </style>
+</head>
+<body>
+
+<!--5.底部菜单栏-->
+<div class="menu" id="head" >
+    <div class="col-xs-4 menu-item menu-item-actived">
+        <span class="glyphicon glyphicon-home"></span>
+        <p>首页</p>
+    </div>
+    <div class="col-xs-4 menu-item">
+        <span class="glyphicon glyphicon-shopping-cart"></span>
+        <p>选号</p>
+    </div>
+    <div class="col-xs-4 menu-item">
+        <span class="glyphicon glyphicon-user"></span>
+        <p>我</p>
+    </div>
+
+</div>
+
+</div>
+</body>
+</html>
