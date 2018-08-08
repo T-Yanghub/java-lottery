@@ -11,5 +11,7 @@ public interface UserService {
 
    public  User findOne(String email,String password);
 
+   public  void  saveWithOutPassword(User user);
+
 
 }

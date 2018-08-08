@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>我</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- 最新版本的 Bootstrap 核心 CSS 文件 -->
+    <link rel="stylesheet" href="../static/css/bootstrap.min.css" th:href="@{/css/bootstrap.min.css}" />
+    <link rel="stylesheet" href="../static/css/bottery.css" th:href="@{/css/bottery.css}" />
+    <!--导入jquery的文件-->
+    <script type="text/javascript" src="../static/js/jquery-1.11.0.js"   th:src="@{/js/jquery-1.11.0.js}"></script>
+    <!-- 最新的 Bootstrap 核心 JavaScript 文件 -->
+    <script src="../static/js/bootstrap.min.js" th:src="@{/js/bootstrap.min.js}"></script>
+    <script src="../static/js/bottery.js" th:src="@{/js/bottery.js}"></script>
+
+
+
+</head>
+
+<body>
+<!--全局容器-->
+<div class="container-fluid">
+    <!--标题栏-->
+    <div class="row" style="height: 70px; line-height: 70px;">
+        <div class="col-xs-12" style="text-align: center;font-size: large; background-color: #E5E5E5;margin-bottom: 40px;">
+            重置密码
+        </div>
+    </div>
+    <!--内容区横向 分为三份-->
+    <div class="row">
+        <div class="col-xs-1">
+
+        </div>
+        <!--登录注册-->
+        <div class="col-xs-10">
+            <div style="text-align: center; color: green;">
+                重置密码
+            </div>
+            <!--分割线-->
+            <div >
+                <hr style="border: 2px solid gray;"/>
+            </div>
+            <!--输入框部分-->
+            <form  action="/user/do_recode" method="post">
+
+                <div class="form-group">
+                    <input type="password" name="newCode" class="form-control" placeholder="请输入新密码" />
+                </div>
+                <div class="form-group">
+                    <span th:text="${msg1}"  style="color: red"></span>
+                    <span th:text="${msg2}" ></span>
+                </div>
+
+
+                <div class="form-group">
+                    <input type="password" name="reNewCode" class="form-control" placeholder="请重复新密码" />
+                </div>
+
+                <div class="form-group" style="float: right;">
+                    <input type="submit"  value="确认重置"  class="btn btn-default"/>
+                </div>
+                <div class="form-group" style="float: left;" onclick="tiaozhuan('/user/to_myParge')">
+                    <input type="buttom"  value="取消"  class="btn btn-default"/>
+                </div>
+                <!--清除浮动-->
+                <div class="clearfix">
+
+                </div>
+            </form>
+            <!--底部文字-->
+            <div >
+                <span style="color: green;" onclick="tiaozhuan('/user/to_register')">去注册</span> &nbsp;&nbsp | &nbsp; &nbsp; <span  style="color: green;" onclick="tiaozhuan('/user/to_login')">去登录</span>
+
+
+            </div>
+        </div>
+        <div class="col-xs-1">
+
+        </div>
+
+    </div>
+</div>
+<!--<script>
+    function tiaozhuan(path) {
+        location.href=path;
+    }
+</script>-->
+</body>
+
+</html>

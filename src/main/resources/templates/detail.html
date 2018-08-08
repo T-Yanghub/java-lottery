@@ -7,60 +7,14 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1">
 		<!-- 最新版本的 Bootstrap 核心 CSS 文件 -->
 		<link rel="stylesheet" href="css/bootstrap.min.css" />
+		<link rel="stylesheet" href="css/bottery.css" />
 		<!--导入jquery的文件-->
 		<script type="text/javascript" src="js/jquery-1.11.0.js"></script>
 		<!-- 最新的 Bootstrap 核心 JavaScript 文件 -->
-		<script src="css/bootstrap.min.css"></script>
+		<script src="js/bootstrap.min.js"></script>
+		<script src="js/bottery.js"></script>
 
-		<style>
-			.title {
-				width: 360px;
-				height: 55px;
-				line-height: 55px;
-				color: rgba(16, 16, 16, 1);
-				background-color: gainsboro;
-				font-size: 18px;
-				text-align: center;
-				font-family: Microsoft Yahei;
-			}
-			.ball-item{
-				width: 31px;
-				height: 31px;
-				line-height: 31px;
-				font-size: 14px;
-				text-align: center;
-				font-family: Roboto;
-				border: 1px solid rgba(187, 187, 187, 1);
-				border-radius: 100%;
-				display: inline-block;
-				margin-right: 10px;
-			}
-			.ball-red{
-				color: red;
-			}
-			
-			.ball-blue{
-				color: blue;
-			}
-			
-			.menu{
-				background-color:gainsboro;
-				padding-top: 5px;
-				position: fixed;
-				left: 0;
-				bottom: 0;
-				width: 100%;
-			}
-			
-			.menu-item{
-				text-align: center;
-			}
-			
-			.menu-item-actived{
-				color: red;
-			}	
-		
-		</style>
+
 	</head>
 
 	<body>
@@ -70,7 +24,7 @@
 			<!--1.标题部分-->
 			<div class="row title">
 				<div class="col-xs-12">
-					<div style="position: absolute;" onclick="location.href='01首页.html'">
+					<div style="position: absolute;" onclick="javascript:history.go(-1)">
 						&lt;返回
 					</div>
 					开奖详情

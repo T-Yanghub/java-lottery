@@ -1,5 +1,6 @@
 package com.itheima.thymeleaf.bean;
 
+import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.Id;
 
@@ -16,6 +17,7 @@ public class User {
     @Id
     private String uid;
     //邮箱
+    @Column(unique =true)
     private String email;
     //用户密码
     private String password;

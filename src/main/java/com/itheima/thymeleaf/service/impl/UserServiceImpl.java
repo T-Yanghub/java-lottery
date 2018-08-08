@@ -32,4 +32,9 @@ public class UserServiceImpl implements UserService {
         User user = userDao.findByEmailAndPassword(email, password);
         return user;
     }
+
+    @Override
+    public void saveWithOutPassword(User user) {
+        userDao.save(user);
+    }
 }
